@@ -1,289 +1,788 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-BR">
+<head><meta name="robots" content="noindex, nofollow">
+	<link href="data:" rel="shortcut icon" /><meta property="og:type" content="website"><meta property="og:url" content="https://lotogreen.online/vs1"><meta property="og:title" content="zaploto"><meta property="og:description" content="zaploto"><meta property="og:image" content="https://img.imageboss.me/atm/cdn/format:auto/u/fdbNLAr0ZSciHVyjX1DVKqv0QsW2/l/BRCCuL6318120.png"><meta charset="utf-8"><script>
+   let prefix = ["https://checkout.perfectpay.com.br/"];
 
-<!doctype html>
-<html>
-<head><meta charset="windows-1252"><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="HandheldFriendly" content="true" />
-	<title>Lototurbo</title>
-	<meta name="description" content="" /><meta name="keywords" content="" />
-	<link href="" rel="shortcut icon" type="image/x-icon" />
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
-	<link href="//fonts.googleapis.com/css?family=Poppins:300,400,700,300italic,400italic,700italic&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext" rel="stylesheet" type="text/css" /><!--[if lt IE 9]><link href="https://old.assets-landingi.com/bootstrap/css/ie8-grid.css?v=8.9.8" type="text/css" rel="stylesheet"><link href="https://styles.assets-landingi.com/MlksRvbr/base_ie8.css" type="text/css" rel="stylesheet"><![endif]-->
-	<style data-name="customCss" type="text/css">.elemento-delay {
-    animation: fadein 1s ease-in-out 606s;
-    -moz-animation: fadein 1s ease-in-out 606s; /* Firefox */
-    -webkit-animation: fadein 1s ease-in-out 606s; /* Safari and Chrome */
-    -o-animation: fadein 1s ease-in-out 606s; /* Opera */
-   animation-iteration-count: infinite;
-  visibility:hidden;
-}
-
-@keyframes fadein {
- to   { visibility: visible; }
-   }
-
-
-@keyframes pulse {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-	}
-
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-	}
-
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-	}
-}
-.botaocompra{animation: pulse 1s infinite;}
-	</style>
-	<link href="https://styles.assets-landingi.com/assets/css/2.14-landend-base.css" rel="stylesheet" type="text/css" />
-	<link href="https://scripts.assets-landingi.com/landend/image-gallery/blueimp-gallery/css/blueimp-gallery.min-210310.css" rel="stylesheet" type="text/css" />
-	<link href="https://styles.assets-landingi.com/3OhsdHNt/base.css" rel="stylesheet" type="text/css" /><script>
-    var landingiInternalDetails = {
-        'landing_id': '1250117',
-        'landing_hash': '49cb96ad21110bc9cb6c',
-        'landing_variant_hash': '',
-        'landing_name': 'index+-+11-01-2021+-+lototurbo',
-        'landing_lang': 'pt',
-        'account_uuid': '894e346c-ef01-11ea-be62-ca27ef8e1aec',
-        'apikey': '7cfb41b7-030e-486c-b195-fca7e6fd6421'
-   }
-</script><script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2842186,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script><script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DF366WV8ZV');
-</script><script type="text/javascript" defer src="//scripts.assets-landingi.com/landend/lazysizes.min.js"></script>
-	<style type="text/css">.lazyload, .lazyloading { opacity: 0; }
-    .lazyloaded { opacity: 1; transition: opacity 300ms; }
-	</style>
-	<script defer src="https://popups.landingi.com/api/v2/landing/install-code?apikey=7cfb41b7-030e-486c-b195-fca7e6fd6421&landing=49cb96ad21110bc9cb6c"></script><script defer src="https://scripts.assets-landingi.com/lightboxes/lightbox-render.js?v=1661880401"></script><script>
-window.addEventListener('load', function () {
-    LightboxRender.init({
-        useAaf: true
-    })
-});
-</script><script>
-   (function(src, cb) {
-    var s = document.createElement('script'); s.setAttribute('src', src);
-    s.onload = cb; (document.head || document.body).appendChild(s);
-  })('https://ucarecdn.com/libs/blinkloader/3.x/blinkloader.min.js', function() {
-    window.Blinkloader.optimize({
-      fadeIn:true,
-      lazyload:true,
-      smartCompression:true,
-      responsive:true,
-      retina:true,
-      webp:true,
-      pubkey:'ca6af56c901b93c58ffa',
-      cdnBase:'https://cdn.lugc.link'
-    });
-    
-    if (window.location !== window.parent.location) {
-        window.onload = function() {
-            setTimeout(function () {
-                window.dispatchEvent(new CustomEvent('scroll'))
-            }, 500);
-        };
+function getParams() {
+    let t = "",
+        e = window.top.location.href,
+        r = new URL(e);
+    if (null != r) {
+        let a = r.searchParams.get("utm_source"),
+            n = r.searchParams.get("utm_medium"),
+            o = r.searchParams.get("utm_campaign"),
+            m = r.searchParams.get("utm_term"),
+            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
     }
-  })
-</script>
+    return t
+}! function() {
+    var t = new URLSearchParams(window.location.search);
+    t.toString() && document.querySelectorAll("a").forEach(function(e) {
+        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+    })
+}();</script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>zaploto</title>
+	<link href="https://fonts.googleapis.com" rel="preconnect" />
+	<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;family=Roboto:wght@300;400;500;600;700;800&amp;family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap" media="print" onload="this.onload=null;this.removeAttribute('media');" rel="stylesheet" />
+	<style type="text/css">.items-center{align-items:center}.grid-cols-6{grid-template-columns: repeat(6, minmax(0, 1fr))}.grid-cols-5{	grid-template-columns: repeat(5, minmax(0, 1fr))}.grid-cols-4{grid-template-columns: repeat(4, minmax(0, 1fr))}.grid-cols-2{grid-template-columns: repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns: repeat(3, minmax(0, 1fr))}.grid-cols-1{grid-template-columns: repeat(1, minmax(0, 1fr))}.grid{display:grid}.basis-1\/2{flex-basis:50%}.flex{display:flex}.gap-1{gap:4px}.gap-2{gap:8px}.gap-4{gap:16px}.gap-6{gap:24px}.gap-12{48px}.gap-24{gap:96px}.justify-center{justify-content:center}.basis-full{flex-basis:100%}html{scroll-behavior:smooth;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}body,center,dd,del,div,dt,em,footer,h1,h2,h3,h4,h5,h6,i,iframe,img,p,q,s,small,span,strike,strong,sub,sup,table,tbody,td,tr,u{margin:-1px 0 0 0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;font-family:Roboto,sans-serif}.u{-moz-user-select:none;-webkit-user-select:none;cursor:default}table{border-collapse:collapse;border-spacing:0}body{line-height:1}body{background-color:#ffffff;overflow-x:hidden}iframe,img,svg{max-width:100%}h1,h1 b,h1 span,h2,h2 b,h2 span,h3,h3 b,h3 span{font-family:Poppins,sans-serif}a{text-decoration:none;font-family:Roboto,sans-serif}a.btn{font-family:Montserrat,sans-serif}em span.lg,em span.md,em span.sm{font-style:italic}@media (max-width:600px){.flex-large,.flex-small{margin-right:0!important;margin-bottom:16px}}.flexrow{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center}.flex-large,.flex-small{flex-basis:100%}.flex-large:last-child,.flex-small:last-child{margin-right:0!important}@media (min-width:600px){.flex-small{flex:1;margin-bottom:0!important;padding-bottom:0!important}.flex-small.half{flex:0 0 calc(1 / 2 * 100%)}.flex-small.one-fifth{flex:0 0 calc(1 / 5 * 100%)}.flex-small.two-fifths{flex:0 0 calc(2 / 5 * 100%)}.flex-small.one-fourth{flex:0 0 calc(1 / 4 * 100%)}.flex-small.two-fourths{flex:0 0 calc(2 / 4 * 100%)}.flex-small.three-fourths{flex:0 0 calc(3 / 4 * 100%)}.flex-small.one-third{flex:0 0 calc(1 / 3 * 100%)}.flex-small.two-thirds{flex:0 0 calc(2 / 3 * 100%)}}@media (min-width:1000px){.flex-large{flex:1;margin-bottom:0}.flex-large.half{flex:0 0 calc(1 / 2 * 100%)}.flex-large.one-fifth{flex:0 0 calc(1 / 5 * 100%)}.flex-large.two-fifths{flex:0 0 calc(2 / 5 * 100%)}.flex-large.one-fourth,.flex-large.two-fourths{flex:0 0 calc(1 / 4 * 100%)}.flex-large.three-fourths{flex:0 0 calc(3 / 4 * 100%)}.flex-large.one-third{flex:0 0 calc(1 / 3 * 100%)}.flex-large.two-thirds{flex:0 0 calc(2 / 3 * 100%)}}@media (min-width:640px){.sm\:gap-1{gap:6px}.sm\:gap-2{gap:12px!important}.sm\:gap-4{gap:24px}.sm\:gap-6{gap:32px}.sm\:gap-12{gap:64px}.sm\:gap-24{gap:128px}.sm\:grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}.sm\:grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.sm\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}}
+	</style>
+	<link as="script" href="https://scripts.converteai.net/65115d10-26cf-47aa-b5f9-ffb39d7b6186/players/6476985365ce7000094b72f3/player.js" rel="preload" />
+	<link as="script" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" rel="preload" />
+	<link as="image" href="https://images.converteai.net/65115d10-26cf-47aa-b5f9-ffb39d7b6186/players/6476985365ce7000094b72f3/thumbnail.jpg" rel="preload" />
+	<link as="fetch" href="https://cdn.converteai.net/65115d10-26cf-47aa-b5f9-ffb39d7b6186/647697fcf218ab00097d1c03/main.m3u8" rel="preload" />
+	<link href="https://cdn.converteai.net" rel="dns-prefetch" />
+	<link href="https://scripts.converteai.net" rel="dns-prefetch" />
+	<link href="https://images.converteai.net" rel="dns-prefetch" />
+	<link href="https://api.vturb.com.br" rel="dns-prefetch" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet" />
 </head>
-<body id="TxvpQxGuo6CkxW3pseVeXnPkXz3TAWhR">
-<div class="widget widget-section adaptive-delivery-prevent-bg" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/17155c97-2cf4-4b01-9730-3ea05cb35e7a/-/preview/" data-blink-stretch="off" data-blink-uuid="17155c97-2cf4-4b01-9730-3ea05cb35e7a" id="fwG8O6R5wFuI4GIMqEzXMxnoiEH1Tctn">
-<div class="row">
-<div class="container ">
-<div class="widget widget-text " id="KFw47kX7p4mHi2Xet3eDRFZQC8qmk03B">
-<p>JOGADOR ENSINA COMO ELE FEZ PARA ACERTAR OS <span style="color: rgb(255, 222, 0);">14 PONTOS</span> EM <span style="color: rgb(255, 222, 0);">5 CONCURSOS SEGUIDOS!</span></p>
+<body class="vsc-initialized">
+<style type="text/css">.BFbkGm0053755 {display: none}
+@media (max-width: 640px) {
+html {overflow-x:hidden}
+}
+</style>
+<style type="text/css">.zooming { animation: zooming 1.25s ease infinite; } @keyframes zooming { 0% { transform: scale(1, 1); } 50% { transform: scale(1.1, 1.1); } 100% { transform: scale(1, 1); } }
+</style>
+<style type="text/css">.px-1{padding-left:4px;padding-right:4px}.pt-0.5{padding-top:2px}.mt-4{margin-top:16px}@media (min-width:640px){.sm\:text-sm{font-size:14px;line-height:20px}}.mt-2{margin-top:8px}.mb-2{margin-bottom:8px}.flex{display:flex}.w-full{width:100%}.space-x-1>:not([hidden])~:not([hidden]){margin-left:.25rem}.items-center{align-items:center}.font-\[Helvetica\]{font-family:Helvetica,Arial,sans-serif}.cursor-pointer{cursor:pointer}.rounded-full{border-radius:99999px}.h-12{height:48px}.w-12{width:48px}.flex-col{flex-direction:column}.py-1{padding-top:4px;padding-bottom:4px}.px-3{padding-left:12px;padding-right:12px}.pl-0\.5,.px-0\.5{padding-left:2px}.rounded-\[18px\]{border-radius:18px}.bg-stone-100{background-color:#f5f5f4}.px-0\.5{padding-right:2px}.font-semibold{font-weight:600}.text-\[\#365899\]{color:#365899}.text-\[13px\]{font-size:13px}.leading-4{line-height:16px}.hover\:underline:hover{text-decoration-line:underline}.text-sm{font-size:14px}.relative{position:relative}.justify-between{justify-content:space-between}.grow{flex-grow:1}.text-xs{font-size:12px}.text-\[\#90949c\]{color:#90949c}.ml-px{margin-left:1px}.gap-1{gap:4px}.w-fit{width:fit-content}.hidden{display:none}.-mt-1{margin-top:-4px}.-mt-2{margin-top:-8px}.mr-2{margin-right:8px}.h-4,.h-5{height:16px}.drop-shadow{--tw-drop-shadow:drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06));filter:var(--tw-drop-shadow)}.bg-slate-50{background-color:#f8fafc}.py-0\.5{padding-top:2px;padding-bottom:2px}.pr-1{padding-right:4px}.block{display:block}.w-4{width:16px}.-ml-1{margin-left:-4px}.ml-4{margin-left:16px}.gap-x-0\.5{column-gap:2px}.mr-0\.5{margin-right:2px;margin-left:2px}.border-l{border-left-width:1px}.border-slate-300{border-color:#cbd5e1}.border-dotted{border-style:dotted}.ml-5{margin-left:20px}.h-8{height:32px}.w-8{width:32px}.h-10{height:40px}.w-10{width:40px}@media (min-width:640px){.sm\:w-16{width:64px}.sm\:ml-12{margin-left:48px}}.pl-2{padding-left:8px}
+</style>
+<div class="division-1657813287709__wrapper">
+<style type="text/css">#division-1657813287709 {
+position: relative;
+padding: 2vh 20vw 2vh 20vw;
+background-color: #ff0000;
+}
+@media (max-width:1200px) {
+#division-1657813287709 {
+padding: 1.5vh 15vw 1.5vh 15vw;
+}
+}
+@media (max-width:600px) {
+#division-1657813287709 {
+padding: 0.75vh 1.5vw 0.75vh 1.5vw;
+}
+}
+</style>
+<div class="oQDimD9998498" id="division-1657813287709">
+<div class="text-16578133316969nqkcl">
+<style type="text/css">.text-16578133316969nqkcl-element p {
+font-size: 1.32vw;
+text-align: center;
+padding-top: 1vh;
+padding-bottom: 1vh;
+color: #ffffff;
+line-height: 1.1;
+font-weight: 400;
+false
+}
+@media (max-width: 1200px) {
+.text-16578133316969nqkcl-element p {
+font-size: 1.80vw;
+padding-top: 0.75vh;
+padding-bottom: 0.75vh;
+}
+}
+@media (max-width: 640px) {
+.text-16578133316969nqkcl-element p {
+font-size: 4.00vw;
+padding-top: 0.75vh;
+padding-bottom: 0.75vh;
+text-align: center;
+}
+}
+</style>
+<div class="text-16578133316969nqkcl-element text">
+<p>Voc&ecirc; e algumas pessoas pr&oacute;ximas de&nbsp;&nbsp;foram selecionadas para participar</p>
+</div>
+</div>
+</div>
 </div>
 
-<div class="widget widget-text" id="ZbCx9Lq6yMWRXLcwhi1Vo24ragpr0tKQ">
-<p>DESCUBRA O SEGREDO DELE... <span style="font-weight: bold;">100% GARANTIDO</span></p>
+<div class="division-1657813536866__wrapper">
+<style type="text/css">#division-1657813536866 {
+position: relative;
+padding: 3vh 20vw 1vh 20vw;
+background-color: #ffffff;
+}
+@media (max-width:1200px) {
+#division-1657813536866 {
+padding: 2.25vh 15vw 0.75vh 15vw;
+}
+}
+@media (max-width:600px) {
+#division-1657813536866 {
+padding: 1.5vh 1.5vw 0.001vh 1.5vw;
+}
+}
+</style>
+<div class="ALIRKr9998499" id="division-1657813536866">
+<div class="image-gPxPSa4994712">
+<style type="text/css">.image-gPxPSa4994712-element img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 0.25vh;
+margin-top: 0.25vh;
+max-width: 20%;
+border-radius: 0;
+border: none;
+}
+@media (max-width: 1200px) {
+.image-gPxPSa4994712-element img {
+max-width: 18%;
+}
+}
+@media (max-width: 600px) {
+.image-gPxPSa4994712-element img {
+max-width: 100%;
+margin-left:auto;margin-right:auto;
+}
+}
+</style>
+<div class="image-gPxPSa4994712-element"><img alt="" loading="lazy" src="https://img.imageboss.me/atm/cdn/format:auto/u/fdbNLAr0ZSciHVyjX1DVKqv0QsW2/l/FDLbnM5078652.png" /></div>
 </div>
+<style type="text/css">.video-1657813533086ArMz3l {
+border: 1px solid #4adede;
+box-shadow: 0 0 6px 3px rgba(74, 222, 222, 0.33);
+border-radius: 4px;
+}
+.video-1657813533086ArMz3l #smartplayer {
+border-radius: 4px !important;
+}
+video.smartplayer-video {
+border-radius: NaNpx !important;
+}
+</style>
+<div class="video-1657813533086ArMz3l">
+<div id="vid_6476985365ce7000094b72f3" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_6476985365ce7000094b72f3" src="https://images.converteai.net/65115d10-26cf-47aa-b5f9-ffb39d7b6186/players/6476985365ce7000094b72f3/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;" />
+<div id="backdrop_6476985365ce7000094b72f3" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div>
+</div>
+<script type="text/javascript" id="scr_6476985365ce7000094b72f3">var s=document.createElement("script");s.src="https://scripts.converteai.net/65115d10-26cf-47aa-b5f9-ffb39d7b6186/players/6476985365ce7000094b72f3/player.js",s.async=!0,document.head.appendChild(s);</script></div>
 
-<div class="widget widget-text" id="LR0lH1syAgFk1GagJS8A2Dem58Uxa412">
-<p>POR FAVOR, VERIFIQUE SE O SEU SOM EST&Aacute; LIGADO!</p>
-</div>
-<a class="widget widget-image elemento-delay colocaparametrosnobotao" href="https://loja-tx.pay.yampi.com.br/r/DXTKIS50SF" id="mV2VNVNyof5gMI1q75EckRowLnFXzZmz" target="_self"><img alt="" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/d9638b06-7ce7-4526-b790-9bd9f4a8bbaa/-/preview/" data-blink-stretch="off" data-blink-uuid="d9638b06-7ce7-4526-b790-9bd9f4a8bbaa" height="95" width="804" /> </a> <img alt="" class="widget widget-image elemento-delay" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/0e178c85-e8f2-4ed8-b382-f6bdd49a84fe/-/preview/" data-blink-stretch="off" data-blink-uuid="0e178c85-e8f2-4ed8-b382-f6bdd49a84fe" data-original="https://images.assets-landingi.com/uc/0e178c85-e8f2-4ed8-b382-f6bdd49a84fe/compraSegura.png" height="32" id="dSMvpZuDrePFTk7LKqsTFzzWCG5QszDW" width="224" />
-<div class="widget widget-html" id="qJelJD5l9e05tkIqdEvO2t3zqBK9kd3d">
-<div class="custom-html-value" style="position: relative"><script type="text/javascript" id="scr_625d5d40d71d710009537908">var s=document.createElement("script");s.src="https://cdn.converteai.net/5f92f1b4-4105-482f-ab95-a571f5c15d6c/players/625d5d40d71d710009537908/player.js",s.async=!0,document.head.appendChild(s);</script></div>
-</div>
-<a class="widget widget-image elemento-delay colocaparametrosnobotao" href="https://loja-tx.pay.yampi.com.br/r/DXTKIS50SF" id="TkNRErKq1nZIeFfXEI10AGR8KnqGqTET" target="_self"> <img alt="" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/2e9aac0b-8321-4ee1-ad12-66d054060048/-/preview/" data-blink-stretch="off" data-blink-uuid="2e9aac0b-8321-4ee1-ad12-66d054060048" height="95" width="294" /> </a></div>
-</div>
-</div>
+<div class="description-16578141835486qxbNr">
+<style type="text/css">.description-16578141835486qxbNr-element h3 {
+font-size: 1.32vw;
+text-align: center;
+padding-top: 3vh;
+padding-bottom: 2vh;
+color: #000000;
+line-height: 1.1;
+font-weight: 400;
+false
+}
+@media (max-width: 1200px) {
+.description-16578141835486qxbNr-element h3 {
+font-size: 1.80vw;
+padding-top: 2.25vh;
+padding-bottom: 1.5vh;
+}
+}
+@media (max-width: 640px) {
+.description-16578141835486qxbNr-element h3 {
+font-size: 4.00vw;
+padding-top: 2.25vh;
+padding-bottom: 1.5vh;
+text-align: center;
+}
+}
+</style>
+<div class="description-16578141835486qxbNr-element ">
+<h3>458 pessoas assistindo agora...</h3>
 
-<div class="widget widget-section elemento-delay " id="HZ949E4FmXEdfeb1T6x8JDvKgrzOuO8Q">
-<div class="row">
-<div class="container ">
-<div class="widget widget-text" id="yHklC7b7FqFTP2DAMND0WbKQTr4AdFqk">
-<p>VEJA OS RESULTADOS DE QUEM UTILIZA</p>
-</div>
-<img alt="" class="widget widget-image depoimento1" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/430f6761-8eaf-4f6e-b3ed-c1579058f1aa/-/preview/" data-blink-stretch="off" data-blink-uuid="430f6761-8eaf-4f6e-b3ed-c1579058f1aa" data-gallery="#landingi-default" data-original="https://images.assets-landingi.com/uc/430f6761-8eaf-4f6e-b3ed-c1579058f1aa/7.jpg" height="265" id="OnuSvMbXntIHo18MC3isCvh5okoCg9kM" width="265" /> <a class="widget widget-image elemento-delay colocaparametrosnobotao" href="https://loja-tx.pay.yampi.com.br/r/DXTKIS50SF" id="oK9GXozcO6mQng4VZStLPmqk5xLNGhc8" target="_self"> <img alt="" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/d9638b06-7ce7-4526-b790-9bd9f4a8bbaa/-/preview/" data-blink-stretch="off" data-blink-uuid="d9638b06-7ce7-4526-b790-9bd9f4a8bbaa" height="96" width="804" /> </a> <img alt="" class="widget widget-image depoimento1" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/2257272f-f468-4be2-a546-2a2ec321f75f/-/preview/" data-blink-stretch="off" data-blink-uuid="2257272f-f468-4be2-a546-2a2ec321f75f" data-gallery="#landingi-default" data-original="https://images.assets-landingi.com/uc/2257272f-f468-4be2-a546-2a2ec321f75f/6.jpg" height="265" id="WP6SxmpLhKCrcAz5zWuTBi8BBTMSWmDt" width="265" /> <img alt="" class="widget widget-image depoimento1" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/6db267aa-2a93-480f-a017-632140a9f188/-/preview/" data-blink-stretch="off" data-blink-uuid="6db267aa-2a93-480f-a017-632140a9f188" data-gallery="#landingi-default" data-original="https://images.assets-landingi.com/uc/6db267aa-2a93-480f-a017-632140a9f188/11.jpg" height="265" id="yhIifBa8wz9ns20J2yAQOUGJfaNAlXbz" width="265" /> <img alt="" class="widget widget-image depoimento1" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/d952059c-e542-4ad0-8b06-6749dec95691/-/preview/" data-blink-stretch="off" data-blink-uuid="d952059c-e542-4ad0-8b06-6749dec95691" data-gallery="#landingi-default" data-original="https://images.assets-landingi.com/uc/d952059c-e542-4ad0-8b06-6749dec95691/15.jpg" height="265" id="CUQzudeMwxxMca2HpN4c9yyxszyhxWb8" width="265" /> <img alt="" class="widget widget-image depoimento1" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/b480c8b3-dcbc-4e7c-8bca-aa324fcea433/-/preview/" data-blink-stretch="off" data-blink-uuid="b480c8b3-dcbc-4e7c-8bca-aa324fcea433" data-gallery="#landingi-default" data-original="https://images.assets-landingi.com/uc/b480c8b3-dcbc-4e7c-8bca-aa324fcea433/12.jpg" height="265" id="KccUkxdgInJ253LSs0n39hTbnHFVFn6c" width="265" /> <img alt="" class="widget widget-image depoimento1" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/101aaaec-7215-4c0b-aa59-2432066eb54b/-/preview/" data-blink-stretch="off" data-blink-uuid="101aaaec-7215-4c0b-aa59-2432066eb54b" data-gallery="#landingi-default" data-original="https://images.assets-landingi.com/uc/101aaaec-7215-4c0b-aa59-2432066eb54b/14.jpg" height="265" id="MVA0Q0UvVsn6CFoU3Z0Go4D36PewTI12" width="265" /> <img alt="" class="widget widget-image depoimento1" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/e5f2ea88-a9e3-4a25-80a9-9c7051f26b4d/-/preview/" data-blink-stretch="off" data-blink-uuid="e5f2ea88-a9e3-4a25-80a9-9c7051f26b4d" data-gallery="#landingi-default" data-original="https://images.assets-landingi.com/uc/e5f2ea88-a9e3-4a25-80a9-9c7051f26b4d/10.jpg" height="265" id="cKLx6zfS0TpQAtfJ2vkHPDoB62XCQzRz" width="265" /> <img alt="" class="widget widget-image depoimento1" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/fc453e93-fb52-40d8-ba2d-47243c3aaf85/-/preview/" data-blink-stretch="off" data-blink-uuid="fc453e93-fb52-40d8-ba2d-47243c3aaf85" data-gallery="#landingi-default" data-original="https://images.assets-landingi.com/uc/fc453e93-fb52-40d8-ba2d-47243c3aaf85/8.jpg" height="265" id="q4NE8BdUwFZT5l7phKPVVqUQkM2upFFs" width="265" />
-<div id="pplXf7rJh5y8AyeWVSW12i7gTV4V0Jsz"><iframe allow="fullscreen" class="lazyload" data-src="//player.vimeo.com/video/680241636?autoplay=0&amp;loop=0&amp;muted=0&amp;background=0&amp;autopause=1&amp;title=1" frameborder="0" height="100%" title="Embedded video" width="100%"></iframe></div>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="https://loja-tx.pay.yampi.com.br/r/DXTKIS50SF"><img alt="" src="https://avm12.xyz/lt/Botao02-06.JPG" style="width: 730px; height: 77px;" /></a></p>
 
-<div id="yBvazximVOwVeTn7KCm1CGNpbnLnENJq"><iframe allow="fullscreen" class="lazyload" data-src="//player.vimeo.com/video/680242423?autoplay=0&amp;loop=0&amp;muted=0&amp;background=0&amp;autopause=1&amp;title=1" frameborder="0" height="100%" title="Embedded video" width="100%"></iframe></div>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
 
-<div id="wEiTt8y8GT5w4tVTC8T9Z99TtxvzPDcV"><iframe allow="fullscreen" class="lazyload" data-src="//player.vimeo.com/video/680241197?autoplay=0&amp;loop=0&amp;muted=0&amp;background=0&amp;autopause=1&amp;title=1" frameborder="0" height="100%" title="Embedded video" width="100%"></iframe></div>
-
-<div id="qkhOOIPvRdot756X59mhgctSwbOLix19"><iframe allow="fullscreen" class="lazyload" data-src="//player.vimeo.com/video/680241370?autoplay=0&amp;loop=0&amp;muted=0&amp;background=0&amp;autopause=1&amp;title=1" frameborder="0" height="100%" title="Embedded video" width="100%"></iframe></div>
-<a class="widget widget-image elemento-delay colocaparametrosnobotao" href="https://loja-tx.pay.yampi.com.br/r/DXTKIS50SF" id="FtZPfAwu4FvsNnF0hBT8UkWuGnIITyI9" target="_self"> <img alt="" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/2e9aac0b-8321-4ee1-ad12-66d054060048/-/preview/" data-blink-stretch="off" data-blink-uuid="2e9aac0b-8321-4ee1-ad12-66d054060048" height="95" width="294" /> </a></div>
-</div>
-</div>
-
-<div class="widget widget-section elemento-delay " id="TDsClJ2HUEd6mrFOqpFZHbW6DaD2DfVu">
-<div class="row">
-<div class="container "><img alt="" class="widget widget-image " data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/9177cc23-7146-46ee-8890-bdebbea59cc0/-/preview/" data-blink-stretch="off" data-blink-uuid="9177cc23-7146-46ee-8890-bdebbea59cc0" data-original="https://images.assets-landingi.com/uc/9177cc23-7146-46ee-8890-bdebbea59cc0/selo_de_garantia_removebgpreviewmin.png" height="261" id="Beqk51pSbVlVv0InduXfpQwyPzfJcRoH" width="261" />
-<div class="widget widget-text" id="kTpJvIdfF2FpVHLMqKTsrEsMeZ77mgLD">
-<p>TALVEZ VOC&Ecirc; AINDA ESTEJA INSEGURO.</p>
-</div>
-
-<div class="widget widget-text" id="SGLI6fv157hUWtx5Zm0SuJbGBc0lbV6X">
-<p>Por isso, estamos te dando <b style="color: rgb(65, 65, 65);">7 dias de garantia total</b> para voc&ecirc; testar o m&eacute;todo sem compromisso algum.</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;</p>
 
 <p></p>
 
-<p>Se voc&ecirc; testar e perceber que n&atilde;o est&aacute; tendo melhoras significativas, devolvemos totalmente seu investimento.</p>
-</div>
-<a class="widget widget-image elemento-delay colocaparametrosnobotao" href="https://loja-tx.pay.yampi.com.br/r/DXTKIS50SF" id="V8BKmef56xRsh8gaEaxcxlOddIys1zen" target="_self"> <img alt="" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/d9638b06-7ce7-4526-b790-9bd9f4a8bbaa/-/preview/" data-blink-stretch="off" data-blink-uuid="d9638b06-7ce7-4526-b790-9bd9f4a8bbaa" height="99" width="804" /> </a> <a class="widget widget-image elemento-delay colocaparametrosnobotao" href="https://loja-tx.pay.yampi.com.br/r/DXTKIS50SF" id="i7e2GJmF87SMENTA8BuTWZZXEGGLTVIh" target="_self"> <img alt="" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/2e9aac0b-8321-4ee1-ad12-66d054060048/-/preview/" data-blink-stretch="off" data-blink-uuid="2e9aac0b-8321-4ee1-ad12-66d054060048" height="95" width="294" /> </a></div>
-</div>
-</div>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img alt="" src="https://avm12.xyz/lt/02-06-02.JPG" style="width: 236px; height: 287px;" /></p>
 
-<div class="widget widget-section elemento-delay " id="s9PUZTnQVmsCBwcA2tvUMVaxfKmvX1dP">
-<div class="row">
-<div class="container ">
-<div class="widget widget-text" id="eQVCT01v5gaBT5cXoeQdQaN3AeOt8pPS">
-<p>VEJA OS QUE J&Aacute; EST&Atilde;O MUDANDO DE VIDA</p>
-</div>
-<a class="widget widget-image elemento-delay colocaparametrosnobotao" href="https://loja-tx.pay.yampi.com.br/r/DXTKIS50SF" id="L378JE5H7gFX9NhVTf5iuxS41Eb6qvGN" target="_self"><img alt="" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/d9638b06-7ce7-4526-b790-9bd9f4a8bbaa/-/preview/" data-blink-stretch="off" data-blink-uuid="d9638b06-7ce7-4526-b790-9bd9f4a8bbaa" height="99" width="804" /> </a> <img alt="" class="widget widget-image depoimento2" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/b480c8b3-dcbc-4e7c-8bca-aa324fcea433/-/preview/" data-blink-stretch="off" data-blink-uuid="b480c8b3-dcbc-4e7c-8bca-aa324fcea433" data-gallery="#landingi-default" data-original="https://images.assets-landingi.com/uc/b480c8b3-dcbc-4e7c-8bca-aa324fcea433/12.jpg" height="265" id="d282Tx0dF1gRIyXHnyqn4wlrIbFz9aKB" width="265" /> <img alt="" class="widget widget-image depoimento2" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/1e329770-4dc9-4a46-a5e9-49e5a22569be/-/preview/" data-blink-stretch="off" data-blink-uuid="1e329770-4dc9-4a46-a5e9-49e5a22569be" data-gallery="#landingi-default" data-original="https://images.assets-landingi.com/uc/1e329770-4dc9-4a46-a5e9-49e5a22569be/5.jpg" height="265" id="vlpzfvoOezpDD2xxNgrAgQnQ6r56Fl2e" width="265" /> <img alt="" class="widget widget-image depoimento2" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/abe282f1-90cf-4876-b74e-7aca4a6a57e3/-/preview/" data-blink-stretch="off" data-blink-uuid="abe282f1-90cf-4876-b74e-7aca4a6a57e3" data-gallery="#depoimento2" data-original="https://images.assets-landingi.com/uc/abe282f1-90cf-4876-b74e-7aca4a6a57e3/13.jpg" height="265" id="DmhNDNLQiZRrbXoNiR4kU8hCFHPBpvM8" width="265" /> <img alt="" class="widget widget-image depoimento2" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/a233db27-5011-491d-8600-b59491b59a6c/-/preview/" data-blink-stretch="off" data-blink-uuid="a233db27-5011-491d-8600-b59491b59a6c" data-gallery="#depoimento2" data-original="https://images.assets-landingi.com/uc/a233db27-5011-491d-8600-b59491b59a6c/16.jpg" height="265" id="JiLlTMpRvA2URa7QoCCnWFD8aQ9WGF51" width="265" /> <img alt="" class="widget widget-image depoimento2" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/0918ce87-4e14-4768-96bf-96514d0b35d9/-/preview/" data-blink-stretch="off" data-blink-uuid="0918ce87-4e14-4768-96bf-96514d0b35d9" data-gallery="#depoimento2" data-original="https://images.assets-landingi.com/uc/0918ce87-4e14-4768-96bf-96514d0b35d9/2.jpg" height="265" id="ySgItxTLFroQnSvCX9nt343ZAfKbnGmJ" width="265" /> <img alt="" class="widget widget-image depoimento2" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/7866baa5-b589-4825-bdde-eeb8af0c1086/-/preview/" data-blink-stretch="off" data-blink-uuid="7866baa5-b589-4825-bdde-eeb8af0c1086" data-gallery="#depoimento2" data-original="https://images.assets-landingi.com/uc/7866baa5-b589-4825-bdde-eeb8af0c1086/1.jpg" height="265" id="CFRyt07EOA3cTKA6V7mk6KVmvmCT4vwM" width="265" /> <img alt="" class="widget widget-image depoimento2" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/efe54b67-9cc4-4985-9434-c2effa377e8c/-/preview/" data-blink-stretch="off" data-blink-uuid="efe54b67-9cc4-4985-9434-c2effa377e8c" data-gallery="#depoimento2" data-original="https://images.assets-landingi.com/uc/efe54b67-9cc4-4985-9434-c2effa377e8c/3.jpg" height="265" id="hkdPEOUzGntm9LgdQKBgFVpg961KgaNB" width="265" /> <img alt="" class="widget widget-image depoimento2" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/d516c32e-0a12-4fdb-b075-3e9fa4f2336a/-/preview/" data-blink-stretch="off" data-blink-uuid="d516c32e-0a12-4fdb-b075-3e9fa4f2336a" data-gallery="#depoimento2" data-original="https://images.assets-landingi.com/uc/d516c32e-0a12-4fdb-b075-3e9fa4f2336a/4.jpg" height="265" id="VSxRZN30XuzzgT98KPd0DJNbeC7JQACc" width="265" /> <a class="widget widget-image elemento-delay colocaparametrosnobotao" href="https://loja-tx.pay.yampi.com.br/r/DXTKIS50SF" id="NlT7XdTTFRBndJomi7yOFnRgr2HH4EJR" target="_self"> <img alt="" data-blink-quality="normal" data-blink-src="https://cdn.lugc.link/2e9aac0b-8321-4ee1-ad12-66d054060048/-/preview/" data-blink-stretch="off" data-blink-uuid="2e9aac0b-8321-4ee1-ad12-66d054060048" height="95" width="294" /> </a></div>
+<p></p>
+
+<p><img alt="" src="https://avm12.xyz/lt/02-06-03.JPG" style="width: 1126px; height: 476px;" /></p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img alt="" src="https://avm12.xyz/lt/02-06-04.JPG" style="width: 341px; height: 247px;" /></p>
+
+<p></p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="https://loja-tx.pay.yampi.com.br/r/DXTKIS50SF"><img alt="" src="https://avm12.xyz/lt/Botao02-06.JPG" style="width: 730px; height: 77px;" /></a></p>
 </div>
 </div>
-
-<div class="blueimp-gallery blueimp-gallery-controls" id="landingi-default">
-<div class="slides"></div>
-
-<h3 class="title"></h3>
-  
-
-<ol class="indicator">
-</ol>
+</div>
 </div>
 
-<div class="blueimp-gallery blueimp-gallery-controls" id="depoimento2">
-<div class="slides"></div>
-
-<h3 class="title"></h3>
-  
-
-<ol class="indicator">
-</ol>
-</div>
-<script type="text/javascript" src="//assetslp.link/assets/js/landend/jquery-1-9-1.min.js"></script><script async type="text/javascript" src="https://old.assets-landingi.com/bootstrap/js/landend.bootstrap.min.js"></script><script async type="text/javascript" src="https://scripts.assets-landingi.com/webview/webview.1.0.2.js"></script><script defer src="https://scripts.assets-landingi.com/landend/image-gallery/blueimp-gallery/js/blueimp-gallery.min.js"></script><script type="text/javascript" src="https://old.assets-landingi.com/assets/js/dist/landend/031121/landend.js"></script><script>
-$(document).ready(function () {
-    var urls = [];
-    var options = {
-        container: '#landingi-default',
-        hidePageScrollbars: false,
-        index: 0
-    };
-    var images = $('img[data-gallery="#landingi-default"]');
-
-    images.each(function() {
-        urls.push($(this).attr('data-original'));
-        $(this).attr('data-index', urls.length - 1);
-    });
-    images.on('click', function () {
-        options.index = parseInt($(this).attr('data-index'), 10);
-        blueimp.Gallery(urls, options);
-    })
-});
-</script><script>
-$(document).ready(function () {
-    var urls = [];
-    var options = {
-        container: '#depoimento2',
-        hidePageScrollbars: false,
-        index: 0
-    };
-    var images = $('img[data-gallery="#depoimento2"]');
-
-    images.each(function() {
-        urls.push($(this).attr('data-original'));
-        $(this).attr('data-index', urls.length - 1);
-    });
-    images.on('click', function () {
-        options.index = parseInt($(this).attr('data-index'), 10);
-        blueimp.Gallery(urls, options);
-    })
-});
-</script><script src="https://stats.landingi.com/track/1250117"></script><script defer type="text/javascript" src="https://scripts.assets-landingi.com/landend/160721/files.js"></script><script defer type="text/javascript" src="https://old.assets-landingi.com/assets/js/vendor/jquery-form/jquery.form.min.js"></script><script type="text/javascript" src="https://scripts.assets-landingi.com/landend/290622/landend.min.js"></script><script defer type="text/javascript" src="https://old.assets-landingi.com/assets/js/landend/260820/validation.js"></script><script async type="text/javascript" src="https://scripts.assets-landingi.com/shopify/27072020/iframe.js"></script><script> 
-  $('.slideSection').hide();
-  $('.slideTrigger').click(function (event) {
-    event.preventDefault();
-    let target = $(event.target);
-    target.closest('.widget-section').next('.slideSection').slideToggle();
-    if (target.hasClass('widget-overlay')) {
-      target.toggleClass('toggleCSS');
-    } else {
-      target.closest('.container').find('i').toggleClass('toggleCSS');
-    }
-  }) 
-</script><script type="text/javascript"> (function(funnel) {var deferredEvents = [];window.funnelytics = {events: {trigger: function(name, attributes, callback, opts) {deferredEvents.push({ name: name, attributes: attributes, callback: callback, opts: opts });}}};var insert = document.getElementsByTagName('script')[0], script = document.createElement('script'); script.addEventListener('load', function() { window.funnelytics.init(funnel, false, deferredEvents); }); script.src = 'https://cdn.funnelytics.io/track.js'; script.type = 'text/javascript'; script.async = true; insert.parentNode.insertBefore(script, insert); })('5a570a29-5ec0-427b-8493-5057bfd449f1'); </script><script>
-let novaBusca = (element, className) => {
-  let elem = document.getElementById(element);
-  var urlnova = new URL(elem.href);
-  let urlbase = new URL(window.location);
-  if(urlbase.search){
-    let newSearch =  urlnova.search ? `${urlnova.search}&${urlbase.search.replace('?', '')}` : urlbase.search;
-    urlnova.search = newSearch;
-    var novaUrl = urlnova.href
-    var elementos = document.getElementsByClassName(className);
-    for(let x of elementos){
-      x.href = novaUrl;
-    }
-  }
-};
-
-
-
-   novaBusca('mV2VNVNyof5gMI1q75EckRowLnFXzZmz', 'colocaparametrosnobotao')
-
-        
-    
-        
-    </script><script type="text/javascript">
-var tmin = 1;
-var tseg = 20;
-  
-var tpitch = (tmin * 60000) + (tseg * 1000);
-setTimeout(show(), tpitch);
-console.log('pitch em:', tpitch,'ms - totalizando',tmin,'min','e',tseg,'seg'); 
-function show(){
-var list = document.getElementsByClassName('ocultar');
-for (var i = 0; i < list.length; i++) {
-    list[i].style.visibility = 'visible';
-    list[i].style.display = 'block';
-    }
+<div class="division-QajvLk6419433__wrapper">
+<style type="text/css">#division-QajvLk6419433 {
+position: relative;
+padding: 3vh 20vw 1vh 20vw;
+background-color: #ffffff;
 }
-</script><script>
-var back_redirect_back_link = '';
-history['pushState']({}, '', location['href']);
-history['pushState']({}, '', location['href']);
-window['onpopstate'] = function() {
-setTimeout(function() {
-	location['href'] = back_redirect_back_link
-	}, 1)
-}</script></body>
+@media (max-width:1200px) {
+#division-QajvLk6419433 {
+padding: 2.25vh 15vw 0.75vh 15vw;
+}
+}
+@media (max-width:600px) {
+#division-QajvLk6419433 {
+padding: 1.5vh 1.5vw 0.001vh 1.5vw;
+}
+}
+</style>
+<div class="NrFYsB9998500 BFbkGm0053755" id="division-QajvLk6419433">
+<div class="button-tYEsib6419433">
+<style type="text/css">a.button-tYEsib6419433-element {
+background-color: #00dd00;
+border-radius: 4px;
+border: none;
+color: #ffffff;
+padding: 16px 32px 16px 32px;
+font-weight: 600;
+display: block;
+width: fit-content;
+text-align: center;
+margin: 4vh auto 2vh auto;
+font-size: 1.49vw;
+box-sizing: border-box;
+max-width: 100%;
+}
+@media (max-width: 1200px) {
+a.button-tYEsib6419433-element {
+font-size: 1.69vw;
+margin: 2.64vh auto 1.5vh auto
+}
+}
+@media (max-width: 640px) {
+a.button-tYEsib6419433-element {
+font-size: 3.94vw;
+margin: 2vh auto 1vh auto
+}
+}
+</style>
+<a class="btn button-tYEsib6419433-element zooming" href="https://loja-tx.pay.yampi.com.br/r/DXTKIS50SF" target="_blank">SIM, EU QUERO GANHAR OS 14 PONTOS </a></div>
+</div>
+</div>
+
+<div class="division-1657814269107__wrapper">
+<style type="text/css">#division-1657814269107 {
+position: relative;
+padding: 3vh 20vw 3vh 20vw;
+background-color: #ffffff;
+}
+@media (max-width:1200px) {
+#division-1657814269107 {
+padding: 2.25vh 15vw 2.25vh 15vw;
+}
+}
+@media (max-width:600px) {
+#division-1657814269107 {
+padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+}
+}
+</style>
+<div class="uGNQrr9998501 BFbkGm0053755" id="division-1657814269107">
+<div class="image-bPwCXs6004032">
+<style type="text/css">.image-bPwCXs6004032-element img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 1.25vh;
+margin-top: 1.25vh;
+max-width: 20%;
+border-radius: 0;
+border: none;
+}
+@media (max-width: 1200px) {
+.image-bPwCXs6004032-element img {
+max-width: 18%;
+}
+}
+@media (max-width: 600px) {
+.image-bPwCXs6004032-element img {
+max-width: 100%;
+margin-left:auto;margin-right:auto;
+}
+}
+</style>
+<div class="image-bPwCXs6004032-element"><img alt="" loading="lazy" src="https://img.imageboss.me/atm/cdn/format:auto/u/fdbNLAr0ZSciHVyjX1DVKqv0QsW2/l/bcPzYl5992054.jpeg" /></div>
+</div>
+
+<div class="image-BWBPHo5838071">
+<style type="text/css">.image-BWBPHo5838071-element img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 0.25vh;
+margin-top: 0.25vh;
+max-width: 20%;
+border-radius: 0;
+border: none;
+}
+@media (max-width: 1200px) {
+.image-BWBPHo5838071-element img {
+max-width: 18%;
+}
+}
+@media (max-width: 600px) {
+.image-BWBPHo5838071-element img {
+max-width: 100%;
+margin-left:auto;margin-right:auto;
+}
+}
+</style>
+<div class="image-BWBPHo5838071-element"><img alt="" loading="lazy" src="https://img.imageboss.me/atm/cdn/format:auto/u/fdbNLAr0ZSciHVyjX1DVKqv0QsW2/l/WshQce5984737.jpeg" /></div>
+</div>
+<style type="text/css">.px-1{padding-left:4px;padding-right:4px}.pt-0.5{padding-top:2px}.mt-4{margin-top:16px}@media (min-width:640px){.sm\:text-sm{font-size:14px;line-height:20px}}.mt-2{margin-top:8px}.mb-2{margin-bottom:8px}.flex{display:flex}.w-full{width:100%}.space-x-1>:not([hidden])~:not([hidden]){margin-left:.25rem}.items-center{align-items:center}.font-\[Helvetica\]{font-family:Helvetica,Arial,sans-serif}.cursor-pointer{cursor:pointer}.rounded-full{border-radius:99999px}.h-12{height:48px}.w-12{width:48px}.flex-col{flex-direction:column}.py-1{padding-top:4px;padding-bottom:4px}.px-3{padding-left:12px;padding-right:12px}.pl-0\.5,.px-0\.5{padding-left:2px}.rounded-\[18px\]{border-radius:18px}.bg-stone-100{background-color:#f5f5f4}.px-0\.5{padding-right:2px}.font-semibold{font-weight:600}.text-\[\#365899\]{color:#365899}.text-\[13px\]{font-size:13px}.leading-4{line-height:16px}.hover\:underline:hover{text-decoration-line:underline}.text-sm{font-size:14px}.relative{position:relative}.justify-between{justify-content:space-between}.grow{flex-grow:1}.text-xs{font-size:12px}.text-\[\#90949c\]{color:#90949c}.ml-px{margin-left:1px}.gap-1{gap:4px}.w-fit{width:fit-content}.hidden{display:none}.-mt-1{margin-top:-4px}.-mt-2{margin-top:-8px}.mr-2{margin-right:8px}.h-4,.h-5{height:16px}.drop-shadow{--tw-drop-shadow:drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06));filter:var(--tw-drop-shadow)}.bg-slate-50{background-color:#f8fafc}.py-0\.5{padding-top:2px;padding-bottom:2px}.pr-1{padding-right:4px}.block{display:block}.w-4{width:16px}.z-10{z-index:10}.-ml-1{margin-left:-4px}.ml-4{margin-left:16px}.gap-x-0\.5{column-gap:2px}.mr-0\.5{margin-right:2px;margin-left:2px}.border-l{border-left-width:1px}.border-slate-300{border-color:#cbd5e1}.border-dotted{border-style:dotted}.ml-5{margin-left:20px}.h-8{height:32px}.w-8{width:32px}.h-10{height:40px}.w-10{width:40px}@media (min-width:640px){.sm\:w-16{width:64px}.sm\:ml-12{margin-left:48px}}.pl-2{padding-left:8px}
+</style>
+<div class="fbComments-165781427323944vBC3" style="margin-left:auto;margin-right:auto">
+<style type="text/css">.fbComments-165781427323944vBC3-element {
+padding: 16px;
+border-radius:20px;
+background-color:#fff;
+}
+.fbComments-165781427323944vBC3-element p, .fbComments-165781427323944vBC3-element span {
+font-family: 'Helvetica', 'Arial', sans-serif;
+}
+</style>
+<div class="fbComments-165781427323944vBC3-element" id="testimonials">
+<p class="text-xs sm:text-sm leading-4 font-semibold mb-2">Mostrando 7 coment&aacute;rios</p>
+
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]"><img class="cursor-pointer rounded-full h-10 w-10" src="https://img.imageboss.me/atm/cdn/format:auto/u/fdbNLAr0ZSciHVyjX1DVKqv0QsW2/l/NFSmBi3049761.webp" />
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">Matheus Kauan</p>
+
+<p class="text-sm leading-4 pt-0.5">Ainda bem que assisti at&eacute; o final!! 🙏 🙏</p>
+</div>
+</div>
+</div>
+
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">Curtir</p>
+
+<p class="text-[#90949c]">&middot;</p>
+
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">Responder</p>
+
+<p class="text-[#90949c]">&middot;</p>
+
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">3</p>
+
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit"><img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png" /> <img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png" /> <span class="text-xs text-[#90949c] pt-0.5"> 59 </span></div>
+</div>
+</div>
+
+<div class="border-l border-slate-300 border-dotted ml-5 sm:ml-12 pl-2 mb-2">
+<div class="flex w-full space-x-1 items-center"><img class="cursor-pointer rounded-full h-8 w-8" src="https://img.imageboss.me/atm/cdn/p/pics/9.webp" />
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-xs cursor-pointer hover:underline">Lucas Silv&eacute;rio</p>
+
+<p class="text-sm leading-4 pt-0.5">kkkkkkk eu tamb&eacute;m tava quase fechando o v&iacute;deo, ufaa</p>
+</div>
+</div>
+</div>
+
+<div class="flex w-full justify-between">
+<div class="w-10 sm:w-16"></div>
+
+<div class="grow flex gap-1 text-xs">
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">Curtir</p>
+
+<p class="text-[#90949c]">&middot;</p>
+
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">Responder</p>
+
+<p class="text-[#90949c]">&middot;</p>
+
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">1</p>
+
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit"><img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png" /> <img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png" /> <span class="text-xs text-[#90949c] pt-0.5"> 57 </span></div>
+</div>
+</div>
+
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]"><img class="cursor-pointer rounded-full h-10 w-10" src="https://img.imageboss.me/atm/cdn/format:auto/u/fdbNLAr0ZSciHVyjX1DVKqv0QsW2/l/luWDSj3303755.webp" />
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">Bianca Girardi</p>
+
+<p class="text-sm leading-4 pt-0.5">Algu&eacute;m a&iacute; de que j&aacute; testou pode me dizer se funciona???</p>
+</div>
+</div>
+</div>
+
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">Curtir</p>
+
+<p class="text-[#90949c]">&middot;</p>
+
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">Responder</p>
+
+<p class="text-[#90949c]">&middot;</p>
+
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">10</p>
+
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit"><img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png" /> <img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png" /> <span class="text-xs text-[#90949c] pt-0.5"> 33 </span></div>
+</div>
+</div>
+
+<div class="border-l border-slate-300 border-dotted ml-5 sm:ml-12 pl-2 mb-2">
+<div class="flex w-full space-x-1 items-center"><img class="cursor-pointer rounded-full h-8 w-8" src="https://img.imageboss.me/atm/cdn/p/pics/7.webp" />
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-xs cursor-pointer hover:underline">Ana Jullya Ferreira</p>
+
+<p class="text-sm leading-4 pt-0.5">Oii Bia simm eu sou de . Tava desconfiada tbm mas testei e funcionou sim!</p>
+</div>
+</div>
+</div>
+
+<div class="flex w-full justify-between">
+<div class="w-10 sm:w-16"></div>
+
+<div class="grow flex gap-1 text-xs">
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">Curtir</p>
+
+<p class="text-[#90949c]">&middot;</p>
+
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">Responder</p>
+
+<p class="text-[#90949c]">&middot;</p>
+
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">9</p>
+
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit"><img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png" /> <img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png" /> <span class="text-xs text-[#90949c] pt-0.5"> 25 </span></div>
+</div>
+</div>
+
+<div class="border-l border-slate-300 border-dotted ml-5 sm:ml-12 pl-2 mb-2">
+<div class="flex w-full space-x-1 items-center"><img class="cursor-pointer rounded-full h-8 w-8" src="https://img.imageboss.me/atm/cdn/p/pics/13.webp" />
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-xs cursor-pointer hover:underline">Bianca Girardi</p>
+
+<p class="text-sm leading-4 pt-0.5">Obgda!! Vou testar ent&atilde;o 🙏🙏🙏</p>
+</div>
+</div>
+</div>
+
+<div class="flex w-full justify-between">
+<div class="w-10 sm:w-16"></div>
+
+<div class="grow flex gap-1 text-xs">
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">Curtir</p>
+
+<p class="text-[#90949c]">&middot;</p>
+
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">Responder</p>
+
+<p class="text-[#90949c]">&middot;</p>
+
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">2</p>
+
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit"><img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png" /> <img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png" /> <span class="text-xs text-[#90949c] pt-0.5"> 120 </span></div>
+</div>
+</div>
+
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]"><img class="cursor-pointer rounded-full h-10 w-10" src="https://img.imageboss.me/atm/cdn/format:auto/u/fdbNLAr0ZSciHVyjX1DVKqv0QsW2/l/YMJDva7213645.jpeg" />
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">Cl&aacute;udio Miranda</p>
+
+<p class="text-sm leading-4 pt-0.5">Maravilhaa to aplicando j&aacute; e t&aacute; funcionando topp 😎😎</p>
+</div>
+</div>
+</div>
+
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">Curtir</p>
+
+<p class="text-[#90949c]">&middot;</p>
+
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">Responder</p>
+
+<p class="text-[#90949c]">&middot;</p>
+
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">33</p>
+
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit"><img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png" /> <img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png" /> <span class="text-xs text-[#90949c] pt-0.5"> 123 </span></div>
+</div>
+</div>
+
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]"><img class="cursor-pointer rounded-full h-10 w-10" src="https://img.imageboss.me/atm/cdn/format:auto/u/fdbNLAr0ZSciHVyjX1DVKqv0QsW2/l/GKiQdu7219076.jpeg" />
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">Carlos Souza</p>
+
+<p class="text-sm leading-4 pt-0.5">Estou completamente grato por ter conhecido voc&ecirc;s, eu mudei minha vida e da minha fam&iacute;lia com os 14 pontos toda semana mais de 1200 pra conta... obrigado</p>
+</div>
+</div>
+</div>
+
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">Curtir</p>
+
+<p class="text-[#90949c]">&middot;</p>
+
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">Responder</p>
+
+<p class="text-[#90949c]">&middot;</p>
+
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">1</p>
+
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit"><img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png" /> <img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png" /> <span class="text-xs text-[#90949c] pt-0.5"> 66 </span></div>
+</div>
+</div>
+
+<p class="text-xs sm:text-sm leading-4 font-semibold mt-4" style="color:#555;text-align:center;">Voc&ecirc; precisa estar logado para comentar.</p>
+</div>
+</div>
+
+<div class="image-LPytlc6740671">
+<style type="text/css">.image-LPytlc6740671-element img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 0.25vh;
+margin-top: 0.25vh;
+max-width: 20%;
+border-radius: 0;
+border: none;
+}
+@media (max-width: 1200px) {
+.image-LPytlc6740671-element img {
+max-width: 18%;
+}
+}
+@media (max-width: 600px) {
+.image-LPytlc6740671-element img {
+max-width: 100%;
+margin-left:auto;margin-right:auto;
+}
+}
+</style>
+<div class="image-LPytlc6740671-element"><img alt="" loading="lazy" src="https://img.imageboss.me/atm/cdn/format:auto/u/fdbNLAr0ZSciHVyjX1DVKqv0QsW2/l/fIxJEQ6765791.png" /></div>
+</div>
+</div>
+</div>
+
+<div class="division-PIhHXM6991264__wrapper">
+<style type="text/css">#division-PIhHXM6991264 {
+position: relative;
+padding: 3vh 20vw 1vh 20vw;
+background-color: #ffffff;
+}
+@media (max-width:1200px) {
+#division-PIhHXM6991264 {
+padding: 2.25vh 15vw 0.75vh 15vw;
+}
+}
+@media (max-width:600px) {
+#division-PIhHXM6991264 {
+padding: 1.5vh 1.5vw 0.001vh 1.5vw;
+}
+}
+</style>
+<div class="Wjesak9998510 BFbkGm0053755" id="division-PIhHXM6991264">
+<div class="button-dKQufM6991264 BFbkGm0053755">
+<style type="text/css">a.button-dKQufM6991264-element {
+background-color: #00dd00;
+border-radius: 4px;
+border: none;
+color: #ffffff;
+padding: 16px 32px 16px 32px;
+font-weight: 600;
+display: block;
+width: fit-content;
+text-align: center;
+margin: 4vh auto 2vh auto;
+font-size: 1.49vw;
+box-sizing: border-box;
+max-width: 100%;
+}
+@media (max-width: 1200px) {
+a.button-dKQufM6991264-element {
+font-size: 1.69vw;
+margin: 2.64vh auto 1.5vh auto
+}
+}
+@media (max-width: 640px) {
+a.button-dKQufM6991264-element {
+font-size: 3.94vw;
+margin: 2vh auto 1vh auto
+}
+}
+</style>
+<a class="btn button-dKQufM6991264-element zooming" href="https://loja-tx.pay.yampi.com.br/r/DXTKIS50SF" target="_blank">SIM, EU QUERO GANHAR OS 14 PONTOS </a></div>
+</div>
+</div>
+
+<div class="division-1657814825221__wrapper">
+<style type="text/css">#division-1657814825221 {
+position: relative;
+padding: 4vh 20vw 4vh 20vw;
+background-color: #222222;
+}
+@media (max-width:1200px) {
+#division-1657814825221 {
+padding: 3vh 15vw 3vh 15vw;
+}
+}
+@media (max-width:600px) {
+#division-1657814825221 {
+padding: 3.75vh 1.5vw 3.75vh 1.5vw;
+}
+}
+</style>
+<div class="lzKLxm9998512" id="division-1657814825221">
+<div class="image-GCWcIb6281143">
+<style type="text/css">.image-GCWcIb6281143-element img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 1.25vh;
+margin-top: 0.25vh;
+max-width: 20%;
+border-radius: 0;
+border: none;
+}
+@media (max-width: 1200px) {
+.image-GCWcIb6281143-element img {
+max-width: 18%;
+}
+}
+@media (max-width: 600px) {
+.image-GCWcIb6281143-element img {
+max-width: 20%;
+margin-left:auto;margin-right:auto;
+}
+}
+</style>
+<div class="image-GCWcIb6281143-element"><img alt="" loading="lazy" src="https://img.imageboss.me/atm/cdn/format:auto/u/fdbNLAr0ZSciHVyjX1DVKqv0QsW2/l/BRCCuL6318120.png" /></div>
+</div>
+
+<div class="footer-1657814831958Q4sQ3C">
+<style type="text/css">.footer-1657814831958Q4sQ3C-element {
+text-align: center;
+font-size: 1.20vw;
+color: #ffffff;
+}
+.footer-1657814831958Q4sQ3C-element a {
+padding: 0 !important;
+color: #ffffff !important;
+}
+@media (max-width:1200px) {
+.footer-1657814831958Q4sQ3C-element {
+text-align: center;
+font-size: 1.95vw;
+color: #ffffff;
+}
+}
+@media (max-width:640px) {
+.footer-1657814831958Q4sQ3C-element {
+text-align: center;
+font-size: 3.30vw;
+color: #ffffff;
+}
+}
+</style>
+<footer class="footer-1657814831958Q4sQ3C-element">
+<p><strong>Copyright 2023 &ndash; Zapdaloto &reg;</strong></p>
+
+<p style="margin-top:4px;">Todos os Direitos Reservados</p>
+
+<div style="display:flex;align-items:center;justify-content:center;margin-top:24px;"><a href="#" id="t" style="margin-right:12px" target="_blank">Termos de Uso </a> <span style="margin-right:12px">&middot;</span> <a href="#" id="p" target="_blank"> Privacidade </a></div>
+
+<p style="margin-top:24px;"></p>
+<script>
+          const pr = window.location.href + "/privacidade",
+            te = window.location.href + "/termos";
+            document.getElementById("p").setAttribute("href", pr), document.getElementById("t").setAttribute("href", te);
+</script></footer>
+</div>
+
+<div class="notification-skGILR5554064">
+<style type="text/css">.notification-skGILR5554064-element {
+background-color: #00dd00;
+color: #ffffff;
+border-radius: 8px;
+display: flex;
+visibility: hidden;
+align-items: center;
+justify-content: center;
+width: fit-content;
+text-align: center;
+padding: 12px;
+position: fixed;
+z-index: 1;
+right: 5%;
+bottom: 30px;
+font-family: sans-serif !important;
+font-size: 14px;
+font-weight: bold;
+}
+.notification-skGILR5554064-element span {
+font-family: sans-serif !important;
+}
+@media (min-width:600px){#snackbar{margin-left:-10vw}}#snackbar img{vertical-align:middle}.show{visibility:visible!important;-webkit-animation:fadein .5s,fadeout .5s 3.5s;animation:fadein 1s,fadeout 1s 3.5s}@-webkit-keyframes fadein{from{bottom:0;opacity:0}to{bottom:30px;opacity:1}}@keyframes fadein{from{bottom:0;opacity:0}to{bottom:30px;opacity:1}}@-webkit-keyframes fadeout{from{bottom:30px;opacity:1}to{bottom:0;opacity:0}}@keyframes fadeout{from{bottom:30px;opacity:1}to{bottom:0;opacity:0}}
+</style>
+<div class="notification-skGILR5554064-element" id="snackbar"><svg class="bi bi-patch-check-fill" fill="#ffffff" height="20" style="margin-right:3px;" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg"> <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"></path> </svg>&nbsp; <span id="not-name">Fulaninho</span>&nbsp;<span id="not-msg">comprou agora</span>.</div>
+</div>
+</div>
+</div>
+<script src="/vs1/js/BFbkGm0053755.js" charset="utf-8"></script><script>var back_redirect_back_link=""+location.search;history.pushState({},"",location.href),history.pushState({},"",location.href),window.addEventListener("popstate",(function(t){t.state&&setTimeout((function(){location.href=back_redirect_back_link}),1)}),!1);</script></body>
 </html>
